@@ -38,16 +38,43 @@ nav ul li a #nav-items-text{
     font-family: Work Sans;
     font-size: 18px;
     font-weight: 500;
+} 
+
+.nav-btn{
+    border:0;
+    color: rgb(60, 53, 79);
+    padding: 18px 24px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.1);
 }
 
-nav ul li a .fa-youtube{
-    margin-left: 1rem;
+
+nav ul li .fa-youtube{
     color:#F61C0D;
-    width: 2.06rem;
+    width: 32px;
 }
 nav ul li a .fa-tiktok{
-    
     color: #000000;
-    width: 1.5rem;;
+    width: 32px;
     
+}
+
+
+
+/* responsive for Mobile Device with media query  */
+@media screen and (max-width:576px){
+    nav{
+        align-items: center;
+    }
+    nav, .nav-items{
+        flex-direction: column;
+        gap:25px;
+    }
+}
+
+/* responsive for Tablet Device with media query  */
+@media screen and (min-width:576px) and (max-width:768px){
+    nav{
+        padding:0;
+    }
 }

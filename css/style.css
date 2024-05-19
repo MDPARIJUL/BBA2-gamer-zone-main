@@ -191,7 +191,21 @@ main{
     margin-bottom: 0px;  */
 }
 
+/* funny videos section styles */
 
+.online-games{
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;    
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+.card img{
+    width: 100%;
+}
 /* responsive for Mobile Device with media query  */
 @media screen and (max-width:576px){
     nav, .goat-container, .gamer-container{
@@ -203,8 +217,17 @@ main{
         flex-direction: column;
         gap:25px;
     }
-   .goat-container img, .gamer-container img{
+   .goat-container img, .gamer-container img, .card-container img{ 
         width: 100%;
+   }
+   .gamer-container .gamer-content{
+        order: -1;
+   }
+   /* styles with grid layout */
+   .card-container{
+        padding: 0px 25px;
+        grid-template-columns: repeat(1, 1fr);
+        
    }
 }
 
@@ -218,9 +241,20 @@ main{
         flex-direction: column;
         gap:25px;
     }
-   .goat-container img, .gamer-container img{
+   .goat-container img, .gamer-container img, .gamer-container img{
         width: 100%;
-   } 
+   }
+   .gamer-container .gamer-content{
+        order: -1;
+    } 
+    /* styles with grid layout */
+   .card-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .card-container, .gamer-container{
+        padding: 0px 25px;
+    }
 }
 
 /* responsive for  Large  Device with media query  */
@@ -239,4 +273,11 @@ main{
    .goat-container img, .gamer-container img{
         width: 100%;
    } 
+   .card-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .card-container, .gamer-container{
+        padding: 0px 25px;
+    }
 }

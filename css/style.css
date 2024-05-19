@@ -1,9 +1,57 @@
+/* ---------------common share styles start------------------- */
 *{
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
 }
+.common-btn{
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 20px;
+    border-radius: 48px;
+    /* Linear */
+    background: linear-gradient(90.00deg, rgb(255, 66, 165) 13.134%,rgb(255, 66, 165) 87.942%);
+    padding:20px 40px;
+    border: 0px;
+    margin-top: 40px;
+}
+#water-btn{
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 48px;
+    background: rgb(78, 197, 247);
+    border:0;
+    padding:20px 40px;
+    margin-top: 40px;
+}
+.section-title{
+    background: linear-gradient(180.00deg, rgb(249, 72, 178),rgb(135, 88, 241));
+    -webkit-background-clip:
+    text;
+    -webkit-text-fill-color:
+    transparent;
+    background-clip:
+    text;
+    text-fill-color:
+    transparent;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+}
+.section-description{
+    color: rgb(83, 76, 100);
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+    /* margin-top: 24px; */
+}
+/* -----------------common styles end --------------- */
+
+
+/* nav related styles  */
 nav{
     padding:40px 200px;
     display: flex;
@@ -59,22 +107,136 @@ nav ul li a .fa-tiktok{
     
 }
 
+/* main related styles  */
+main{
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+/* goat section styles  */
+.goat-container{
+   /* padding: 40px 180px; */
+   display: flex;
+   align-items: center;
+   gap:70px;
+}
+.goat-container img{
+    width: 50%;
+}
+.goat-heading{
+    color: rgb(11, 2, 35);
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom:0px;
+}
+.goat-title{
+    font-family: Work Sans;
+    font-size: 5rem;
+    font-weight: 800;
+    background: linear-gradient(180.00deg, rgb(249, 72, 178),rgb(135, 88, 241));
+    -webkit-background-clip:
+    text;
+    -webkit-text-fill-color:
+    transparent;
+    background-clip:
+    text;
+    text-fill-color:
+    transparent; 
+    margin-top: 0px;
+    margin-bottom: 0px;   
+}
+.goat-container .goat-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.goat-container .goat-info .goat-info-description{
+    color: rgb(83, 76, 100);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
+
+/* gamer part styles  */
+.gamer-container{
+    margin-top: 100px;
+    display: flex;
+    gap: 52px;
+    
+}
+.gamer-container img{
+    width: 50%;
+}
+.our-purpose{
+    font-family: Work Sans;
+    max-width: 160px;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+.unleash{
+    color: rgb(83, 76, 100);
+    font-family: Work Sans;
+    font-size: 32px;
+    font-weight: 700;
+    /* margin-top: 0px;
+    margin-bottom: 0px;  */
+}
 
 
 /* responsive for Mobile Device with media query  */
 @media screen and (max-width:576px){
-    nav{
+    nav, .goat-container, .gamer-container{
         align-items: center;
+        padding:0;
     }
-    nav, .nav-items{
+
+    nav, nav ul, .goat-container, .gamer-container{
         flex-direction: column;
         gap:25px;
     }
+   .goat-container img, .gamer-container img{
+        width: 100%;
+   }
 }
 
 /* responsive for Tablet Device with media query  */
 @media screen and (min-width:576px) and (max-width:768px){
-    nav{
+    nav, .goat-container, .gamer-container{
+        align-items: center;
         padding:0;
     }
+    nav, .nav-items, .goat-container, .gamer-container{
+        flex-direction: column;
+        gap:25px;
+    }
+   .goat-container img, .gamer-container img{
+        width: 100%;
+   } 
+}
+
+/* responsive for  Large  Device with media query  */
+@media screen and (min-width:768px) and (max-width:992px){
+    nav{
+        align-items: center;
+        padding:0px;
+    }
+    nav, .nav-items, .goat-container, .gamer-container{
+        flex-direction: column;
+        gap:25px;
+    }
+    .goat-container{
+        /* padding:0px 100px; */
+    }
+   .goat-container img, .gamer-container img{
+        width: 100%;
+   } 
 }

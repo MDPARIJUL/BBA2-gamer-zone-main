@@ -48,6 +48,20 @@
     font-weight: 400;
     /* margin-top: 24px; */
 }
+.play-instantly-title{
+    background:linear-gradient(180.00deg, rgb(249, 72, 178), rgb(135, 88, 241));
+    -webkit-background-clip:
+    text;
+    -webkit-text-fill-color:
+    transparent;
+    background-clip:
+    text;
+    text-fill-color:
+    transparent;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+}
 /* -----------------common styles end --------------- */
 
 
@@ -206,21 +220,56 @@ main{
 .card img{
     width: 100%;
 }
+.card-container .card #rectangle-6{
+    background-color: rgba(0, 0, 0, 0.6);
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+
+/* play instantly section  */
+.play-instantly{
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+    margin-top: 120px;
+}
+.play-instantly img{
+    width: 100%;
+}
+.no-downloads{
+    color:rgb(11, 2, 35);
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+/* play games online section  */
+.play-games-container{
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+    margin-top: 120px;
+}
+.play-games-container img{
+    width: 100%;
+}
+
 /* responsive for Mobile Device with media query  */
 @media screen and (max-width:576px){
-    nav, .goat-container, .gamer-container{
+    nav, .goat-container, .gamer-container, .play-instantly, .play-games-container{
         align-items: center;
         padding:0;
     }
 
-    nav, nav ul, .goat-container, .gamer-container{
+    nav, nav ul, .goat-container, .gamer-container, .play-instantly, .play-games-container{
         flex-direction: column;
         gap:25px;
     }
-   .goat-container img, .gamer-container img, .card-container img{ 
+   .goat-container img, .gamer-container img, .card-container img, .play-instantly img, .play-games-container img{ 
         width: 100%;
    }
-   .gamer-container .gamer-content{
+   .gamer-container .gamer-content, .play-instantly-contennt{
         order: -1;
    }
    /* styles with grid layout */
@@ -237,7 +286,7 @@ main{
         align-items: center;
         padding:0;
     }
-    nav, .nav-items, .goat-container, .gamer-container{
+    nav, .nav-items, .goat-container, .gamer-container, .play-instantly, .play-games-container{
         flex-direction: column;
         gap:25px;
     }
@@ -263,7 +312,7 @@ main{
         align-items: center;
         padding:0px;
     }
-    nav, .nav-items, .goat-container, .gamer-container{
+    nav, .nav-items, .goat-container, .gamer-container, .play-instantly, .play-games-container{
         flex-direction: column;
         gap:25px;
     }

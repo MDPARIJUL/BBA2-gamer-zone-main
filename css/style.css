@@ -394,4 +394,14 @@ main{
     .card-container, .gamer-container{
         padding: 0px 25px;
     }
+    .rectangle-66{
+        position: absolute;
+        left: 0px;
+        top: 540px;
+    }
+    .rectangle-67{
+        position: absolute;
+        left: 0px;
+        top: 500px;
+    }
 }

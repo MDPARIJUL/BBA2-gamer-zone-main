@@ -233,9 +233,32 @@ main{
     align-items: center;
     column-gap: 100px;
     margin-top: 120px;
+    /* position: relative; */
+}
+.play-instantly-img{
+    position: relative;
 }
 .play-instantly img{
     width: 100%;
+   
+}
+.play-instantly-img img{
+    /* margin-left: 100px; */
+    width: 100%;
+}
+.rectangle-66{
+    position: absolute;
+    top:320px;
+    left:-100px;
+}
+.rectangle-67{
+    position: absolute;
+    top:320px;
+    left:-100px;
+}
+.rectangle-66 img, .rectangle-67 img{
+    width: 50%;
+
 }
 .no-downloads{
     color:rgb(11, 2, 35);
@@ -252,8 +275,25 @@ main{
     margin-top: 120px;
 }
 .play-games-container img{
-    width: 100%;
+    /* width: 100%; */
 }
+/* games section styles  */
+.games-container{
+    background: linear-gradient(90.00deg, rgba(255, 66, 165, 0.03) 13.134%,rgba(255, 66, 165, 0.03) 87.942%);
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap:50px;
+    padding: 0px 100px;
+}
+.white-btn{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
 
 /* responsive for Mobile Device with media query  */
 @media screen and (max-width:576px){
@@ -278,6 +318,21 @@ main{
         grid-template-columns: repeat(1, 1fr);
         
    }
+   .rectangle-66 img, .rectangle-67 img{
+        width: 50%;
+
+    }
+    .rectangle-67{
+        position: absolute;
+        left: 0px;
+        top: 200px;
+    }
+    .rectangle-66{
+        position: absolute;
+        left: 0px;
+        top: 250px;
+    }
+
 }
 
 /* responsive for Tablet Device with media query  */
@@ -303,6 +358,16 @@ main{
     }
     .card-container, .gamer-container{
         padding: 0px 25px;
+    }
+    .rectangle-66{
+        position: absolute;
+        left: 0px;
+        top: 540px;
+    }
+    .rectangle-67{
+        position: absolute;
+        left: 0px;
+        top: 480px;
     }
 }
 

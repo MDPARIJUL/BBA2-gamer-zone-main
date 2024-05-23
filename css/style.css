@@ -281,18 +281,88 @@ main{
 .games-container{
     background: linear-gradient(90.00deg, rgba(255, 66, 165, 0.03) 13.134%,rgba(255, 66, 165, 0.03) 87.942%);
     display: flex;
-    /* justify-content: space-between; */
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     gap:50px;
-    padding: 0px 100px;
+    
 }
 .white-btn{
+    border-radius: 50px;
+    background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
 }
+#arcade:hover{
+    background: linear-gradient(90.00deg, rgb(255, 66, 165),rgb(255, 66, 165));
+    -webkit-background-clip:
+    text;
+    -webkit-text-fill-color:
+    transparent;
+    background-clip:
+    text;
+    text-fill-color:
+    transparent;
+   border:1px solid  rgb(255, 66, 165);
+}
+/* games container section  */
+.games-container{
+    margin-top: 120px;
+}
+.white-btn{
+    border: 0;
+    padding:10px 20px;
+    border-radius: 25px;
+}
+.white-btn img{
+    width: 25px;
+}
 
+.games-title{
+    margin-left: 16px;
+}
 
+/* footer part style  */
+.footer-container{
+    /* text-align: center; */
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 500px;
+}
+.footer-g{
+    background: linear-gradient(90.00deg, rgb(255, 66, 165) 13.134%,rgb(255, 66, 165) 87.942%);
+    -webkit-background-clip:
+    text;
+    -webkit-text-fill-color:
+    transparent;
+    background-clip:
+    text;
+    text-fill-color:
+    transparent;
+}
 
+.footer-desc{
+    display: flex;
+    color:#FFFFFF;
+    /* text-align: center; */
+}
+.footer-desc-title{
+    margin-right: 30px;
+}
+.font-icon{
+    color:#FFFFFF;
+}
+.fa-brands{
+    margin-right: 10px;
+}
+.font-info{
+    color:#FFFFFF99;
+    display: flex;
+    /* text-align: center; */
+}
+.footer-para{
+    color:#FFFFFF;
+}
 
 
 /* responsive for Mobile Device with media query  */
@@ -332,6 +402,17 @@ main{
         left: 0px;
         top: 250px;
     }
+    .footer-desc{
+        /* flex-direction: column; */
+        /* display: grid;
+        grid-template-columns: repeat(3, 1fr); */
+    }
+    .font-icon{
+        /* flex-direction: column; */
+    }
+    .footer-container{
+        padding: 100px 0px;
+    }
 
 }
 
@@ -369,6 +450,7 @@ main{
         left: 0px;
         top: 480px;
     }
+    
 }
 
 /* responsive for  Large  Device with media query  */
